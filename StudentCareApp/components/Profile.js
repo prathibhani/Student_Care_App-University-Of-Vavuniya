@@ -40,7 +40,35 @@ export default  function Profile ({ route }){
             Blood Group: {studentdata.blood_group}
           </Text>
         </View>
-
+        <View style={styles.buttonContainer}>
+          <Button
+            mode="contained"
+            onPress={() => {
+              navigate.navigate("profile", { studentdata });
+            }}
+            style={styles.button}
+          >
+            Profile
+          </Button>
+          <Button
+            mode="contained"
+            onPress={() => {
+              navigate.navigate("course");
+            }}
+            style={styles.button}
+          >
+            Course
+          </Button>
+          <Button
+            mode="contained"
+            onPress={() => {
+              navigate.navigate("subjects");
+            }}
+            style={styles.button}
+          >
+            Subjects
+          </Button>
+        </View>
 </ScrollView>
 </PaperProvider>
 
