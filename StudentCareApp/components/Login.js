@@ -4,6 +4,9 @@ import { students } from "../data/StudentsDb";
 import { useNavigation } from "@react-navigation/native";
 
 export default function Login(){
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
+    
     return(
         <PaperProvider>
 <ScrollView>
