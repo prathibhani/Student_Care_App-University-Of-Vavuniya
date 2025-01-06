@@ -50,9 +50,61 @@ export default function Course() {
           </Text>
 
           <Divider style={styles.divider} />
+          </View>
+        <View style={styles.header}>
+          <Text style={styles.headerText}>UoV @2025</Text>
         </View>
           </ScrollView>
 </PaperProvider>
 
     );
 }
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      padding: 16,
+    },
+    courseInfoContainer: {
+      marginTop: 20,
+    },
+    title: {
+      fontSize: 24,
+      fontWeight: "bold",
+      marginBottom: 20,
+    },
+    infoText: {
+      fontSize: 16,
+      marginBottom: 12,
+    },
+    label: {
+      fontWeight: "bold",
+    },
+    divider: {
+      marginVertical: 16,
+    },
+    header: {
+      width: "100%",
+      height: 100,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "#8b008b",
+    },
+    headerText: {
+      fontSize: 24,
+      color: "#fff",
+      backgroundColor: "#8b008b",
+      fontWeight: "bold",
+    },
+    image: {
+      width: "60%",
+      height: 100,
+      resizeMode: "contain",
+      marginTop: 5,
+    },
+    imagecontain: { alignItems: "center" },
+    loginText: {
+      fontSize: 40,
+      fontWeight: "bold",
+    },
+  });
+  
